@@ -6,6 +6,26 @@
 </article>
 {{ /entries:listing }}
 
+{{ entries:pagination folder="blog" limit="2" }}
+  {{ if first_page }}
+    <a href="{{ first_page }}">First</a>
+  {{ endif }}
+ 
+  {{ if previous_page }}
+    <a href="{{ previous_page }}">Previous</a>
+  {{ endif }}
+ 
+  <a href="{{ current_page }}">Current</a>
+ 
+  {{ if next_page }}
+    <a href="{{ next_page }}">Next</a>
+  {{ endif }}
+ 
+  {{ if last_page }}
+   <a href="{{ last_page }}">Last</a>
+  {{ endif }}
+{{ /entries:pagination }}
+
 {{# 
 ====================================
   NOTES
