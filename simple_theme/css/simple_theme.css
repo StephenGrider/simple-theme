@@ -2,3 +2,5 @@
 
 body { max-width: 36em; margin: 0 auto; }
 h2 { color: red; text-align: center; }
+article { border-bottom: 1px solid #eee; padding: 1em 0; }
+article:last-of-type { border-bottom: none; }
