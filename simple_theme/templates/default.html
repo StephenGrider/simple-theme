@@ -8,21 +8,21 @@
 
 {{ entries:pagination folder="blog" limit="2" }}
   {{ if first_page }}
-    <a href="{{ first_page }}">First</a>
+    <a href="{{ first_page }}">&laquo; First</a>
   {{ endif }}
  
   {{ if previous_page }}
-    <a href="{{ previous_page }}">Previous</a>
+    <a href="{{ previous_page }}">&laquo; Previous</a>
   {{ endif }}
  
   <a href="{{ current_page }}">Current</a>
  
   {{ if next_page }}
-    <a href="{{ next_page }}">Next</a>
+    <a href="{{ next_page }}">Next &raquo;</a>
   {{ endif }}
  
   {{ if last_page }}
-   <a href="{{ last_page }}">Last</a>
+   <a href="{{ last_page }}">Last &raquo;</a>
   {{ endif }}
 {{ /entries:pagination }}
 
