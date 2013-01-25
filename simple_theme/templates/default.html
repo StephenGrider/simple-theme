@@ -6,7 +6,7 @@
 {{ /entries:listing }}
 
 {{ entries:pagination folder="blog" limit="2" }}
- 
+<div class="pagination">
   {{ if previous_page }}
     <a href="{{ previous_page }}">&laquo; Previous</a>
   {{ endif }}
@@ -15,7 +15,7 @@
   {{ if next_page }}
     <a href="{{ next_page }}">Next &raquo;</a>
   {{ endif }}
- 
+</div><!-- END .pagination -->
 {{ /entries:pagination }}
 
 {{# 
